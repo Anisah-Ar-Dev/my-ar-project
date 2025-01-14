@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek AR Menggunakan A-Frame dan AR.js</title>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js -->
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!-- Marker -->
+      <a-marker preset="hiro">
+        <!-- 3D Model yang dipaparkan apabila marker dikesan -->
+        <a-box position="0 0.5 0" material="color: red;" scale="1 1 1"></a-box>
+      </a-marker>
+      <!-- Kamera AR -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
