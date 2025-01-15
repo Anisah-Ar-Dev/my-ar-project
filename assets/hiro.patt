@@ -1,1 +1,4 @@
-
+<a-marker type="pattern" url="assets/hiro.patt">
+  <!-- 3D objek yang akan dipaparkan apabila marker dikesan -->
+  <a-box position="0 0.5 0" material="color: red;" scale="1 1 1"></a-box>
+</a-marker>
